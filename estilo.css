@@ -1,0 +1,22 @@
+#titulo{
+    font-size: 40px;
+    color: rgb(0, 157, 255);
+    text-align: center
+}
+
+#subtitulo{
+    color: blueviolet;
+}
+
+img{
+    border: solid 3px;
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.letras{
+    color: blue;
+}
