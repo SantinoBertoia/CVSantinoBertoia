@@ -1,3 +1,15 @@
+nav {
+    background-color: aqua;
+}
+
+.botones{
+    text-align: center;
+}
+
+footer{
+    background-color: aquamarine;
+}
+
 #titulo{
     font-size: 40px;
     color: rgb(0, 157, 255);
