@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.navbar ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #272727;
+}
+
+.navbar li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-logo {
+    flex: 1;
+    font-size: 1.5rem;
+    user-select: none;
+    font-weight: bolder;
+    color: #F3C800;
+}
+
+.navbar-icono {
+    color: #F3C800;
+    font-size: 1.75rem;
+    display: none;
+}
+
+.navbar-links:hover {
+    background-color: #F3C800;
+}
+
+
+.navbar-links:hover a {
+    color: black;
+}
+
+@media (max-width: 750px) {
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+    .navbar-icono {
+        display: block;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar.active .navbar-links {
+        display: block;
+    }
+}
