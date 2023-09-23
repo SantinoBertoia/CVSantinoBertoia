@@ -43,16 +43,22 @@ body {
     display: none;
 }
 
+.navbar-links {
+    border-radius: 7%;
+}
+
 .navbar-links:hover {
     background-color: #F3C800;
+    transition: 0.5s;
 }
 
 
 .navbar-links:hover a {
     color: black;
+    transition: 0.5s;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 755px) {
     .navbar ul {
         flex-wrap: wrap;
     }
@@ -60,6 +66,7 @@ body {
         display: block;
     }
     .navbar-links {
+        border-radius: 0%;
         display: none;
         width: 100%;
         text-align: center;
