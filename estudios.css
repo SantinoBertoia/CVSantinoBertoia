@@ -68,3 +68,23 @@ body {
         display: block;
     }
 }
+
+footer {
+    background-color: #272727 ;
+}
+
+.contenedorFooter {
+    width: 100%;
+}
+
+.iconos {
+    display: flex;
+    justify-content:space-evenly ;
+}
+
+.iconos a {
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 3rem;
+    color: #F3C800; 
+}

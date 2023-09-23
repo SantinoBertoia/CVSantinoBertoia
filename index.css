@@ -43,16 +43,21 @@ body {
     display: none;
 }
 
-.navbar-links:hover {
-    background-color: #F3C800;
+.navbar-links {
+    border-radius: 7%;
 }
 
+.navbar-links:hover {
+    background-color: #F3C800;
+    transition: 0.5s;
+}
 
 .navbar-links:hover a {
     color: black;
+    transition: 0.5s;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 755px) {
     .navbar ul {
         flex-wrap: wrap;
     }
@@ -60,6 +65,7 @@ body {
         display: block;
     }
     .navbar-links {
+        border-radius: 0%;
         display: none;
         width: 100%;
         text-align: center;
@@ -67,4 +73,24 @@ body {
     .navbar.active .navbar-links {
         display: block;
     }
+}
+
+footer {
+    background-color: #272727 ;
+}
+
+.contenedorFooter {
+    width: 100%;
+}
+
+.iconos {
+    display: flex;
+    justify-content:space-evenly ;
+}
+
+.iconos a {
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 3rem;
+    color: #F3C800; 
 }
