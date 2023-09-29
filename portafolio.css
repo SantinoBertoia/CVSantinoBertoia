@@ -91,7 +91,16 @@ footer {
 
 .iconos a {
     text-decoration: none;
+    border-radius: 15%;
     padding: 0.5rem;
-    font-size: 3rem;
-    color: #F3C800; 
+    margin: 0.5rem;
+    font-size: 3.5rem;
+    color: #F3C800;
+    background-color:black;
+}
+
+.iconos a:hover {
+    background-color: #F3C800;
+    color: black;
+    transition: 0.5s;
 }
