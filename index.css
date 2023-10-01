@@ -10,7 +10,8 @@ html{height:  100%;}
 
 body {
     background-color: black;
-    position: relative;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -22,14 +23,43 @@ header {
 }
 
 main {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.texto1 {
+    color: white;
+    margin: 5px;
+    font-weight: bolder;
+    font-size: 7.5vw;
+}
+
+.texto2 {
+    color: white;
+    margin: 10px;
+    font-weight: lighter;
+    font-size: 3.5vw;
+}
+
+.texto3{
+    color: white;
+    margin: 10px;
+    font-weight: 450;
+    font-size: 3vw;
+}
+
+span {
+    color: #F3C800;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    margin: auto;
+    margin-top: auto;
+    background-color: #272727;
 }
 
 .navbar ul {
@@ -78,7 +108,7 @@ footer {
     transition: 0.5s;
 }
 
-@media (max-width: 755px) {
+@media (max-width: 767px) {
     .navbar ul {
         flex-wrap: wrap;
     }

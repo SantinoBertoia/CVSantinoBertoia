@@ -10,7 +10,8 @@ html{height:  100%;}
 
 body {
     background-color: black;
-    position: relative;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -22,14 +23,62 @@ header {
 }
 
 main {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 3.5rem;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    text-decoration: underline;
+}
+
+.contenedor {
+    background-color: #272727;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+    margin: auto;
+}
+
+.textos {
+    margin-right: 3.25em;
+    text-align: left;
+}
+
+.subtitulo {
+    color: #F3C800;
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+.textoNormal {
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.foto {
+    border: 0.25rem solid #F3C800;
+    border-radius: 5%;
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    margin: auto;
+    margin-top: auto;
+    background-color: #272727;
 }
 
 .navbar ul {
@@ -78,7 +127,7 @@ footer {
     transition: 0.5s;
 }
 
-@media (max-width: 755px) {
+@media (max-width: 767px) {
     .navbar ul {
         flex-wrap: wrap;
     }
@@ -94,10 +143,24 @@ footer {
     .navbar.active .navbar-links {
         display: block;
     }
+    .titulo {
+        font-size: 2.75rem;
+    }
+    .subtitulo {
+        font-size: 1rem;
+    }
+    .textoNormal {
+        font-size: 0.75rem;
+    }
+    .foto {
+        width: 100%;
+        max-width: 10rem;
+        height: auto;
+    }
 }
 
 footer {
-    background-color: #272727 ;
+    background-color: #272727;
 }
 
 .contenedorFooter {
@@ -106,7 +169,7 @@ footer {
 
 .iconos {
     display: flex;
-    justify-content:space-evenly ;
+    justify-content: space-evenly;
 }
 
 .iconos a {
