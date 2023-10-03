@@ -31,7 +31,7 @@ main {
 
 .titulo {
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
     margin-top: 3%;
     margin-bottom: 1%;
     text-decoration: underline;
@@ -47,7 +47,7 @@ main {
 }
 
 .web {
-    flex-basis: calc(25% - 2em); /* Establece el tamaño base de cada imagen (puedes ajustar según tus preferencias) */
+    flex-basis: calc(25% - 2em);
     margin: 1em;
 }
 
