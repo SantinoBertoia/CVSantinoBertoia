@@ -10,7 +10,8 @@ html{height:  100%;}
 
 body {
     background-color: black;
-    position: relative;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -22,14 +23,82 @@ header {
 }
 
 main {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 4rem;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    text-decoration: underline;
+}
+
+.contenedor {
+    border-radius: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+    margin: auto;
+}
+
+.texto1,
+.texto2 {
+    width: 70%;
+    min-height: 26rem; 
+    background-color: #272727;
+    border-radius: 5%;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.texto1 p {
+    text-align: left;
+}
+
+.texto2 p {
+    text-align: left;
+}
+
+.subtitulo {
+    font-size: 2.2rem;
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.textoResaltado {
+    font-size: 1.5rem;
+    color: #F3C800;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.textoNormal {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+.resaltado {
+    color: #F3C800;
+}
+
+.logos {
+    width: 50%;
+    height: auto;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    margin: auto;
+    margin-top: auto;
+    background-color: #272727;
 }
 
 .navbar ul {
@@ -78,7 +147,27 @@ footer {
     transition: 0.5s;
 }
 
-@media (max-width: 755px) {
+@media (max-width: 767px) {
+    .contenedor {
+        flex-direction: column;
+    }
+    .texto1,
+    .texto2 {
+        width: 90%;
+    }
+    .subtitulo {
+        margin-bottom: 1rem;
+    }
+    .textoResaltado {
+        margin-bottom: 0.75rem;
+    }
+    .textoNormal {
+        margin-bottom: 0.75rem;
+    }
+    .logos {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
     .navbar ul {
         flex-wrap: wrap;
     }
@@ -97,7 +186,7 @@ footer {
 }
 
 footer {
-    background-color: #272727 ;
+    background-color: #272727;
 }
 
 .contenedorFooter {
@@ -106,7 +195,7 @@ footer {
 
 .iconos {
     display: flex;
-    justify-content:space-evenly ;
+    justify-content: space-evenly;
 }
 
 .iconos a {
