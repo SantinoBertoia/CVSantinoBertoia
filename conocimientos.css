@@ -25,10 +25,9 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    height: 80vh;
     text-align: center;
+    min-height: calc(100vh - 150px);
 }
 
 .titulo {
@@ -139,7 +138,13 @@ footer {
     transition: 0.5s;
 }
 
-@media (max-width: 767px) {
+@media (max-height: 645px) {
+    footer {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 850px) {
     .navbar ul {
         flex-wrap: wrap;
     }

@@ -147,7 +147,7 @@ footer {
     transition: 0.5s;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 850px) {
     .contenedor {
         flex-direction: column;
     }

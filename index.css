@@ -27,7 +27,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: calc(100vh - 150px);
     text-align: center;
 }
 
@@ -108,7 +108,7 @@ footer {
     transition: 0.5s;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 850px) {
     .navbar ul {
         flex-wrap: wrap;
     }
