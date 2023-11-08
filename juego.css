@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 
-html{height:  100%;}
+html {
+    height: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +18,13 @@ body {
     min-height: 100vh;
 }
 
+.opcion {
+    display: none;
+}
+
 header {
     width: 100%;
-    margin: 0px;
+    margin: 0;
     position: relative;
     height: auto;
 }
@@ -25,10 +32,74 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 150px);
     text-align: center;
+    min-height: calc(100vh - 150px);
+}
+
+.titulo {
+    color: white;
+    font-size: 3.3rem;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    text-decoration: underline;
+}
+
+.contenedor {
+    background-color: #272727;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+    margin: auto;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: 5px solid transparent;
+    cursor: pointer;
+    color: #272727;
+    font-size: 1.5em;
+    background-color: #F3C800;
+    border-radius: 5%;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+
+button:hover {
+    border: 5px solid black;
+    color: white;
+}
+
+#botonInicio {
+    border: 5px solid transparent;
+    transition: 0.5s;
+}
+
+#botonInicio:hover {
+    border: 5px solid black;
+    color: white;
+}
+
+p {
+    color: #333;
+    font-size: 18px;
+    margin: 10px;
+}
+
+#result {
+    font-weight: bold;
+    font-size: 20px;
+    color: #27ae60;
 }
 
 .navbar ul {
@@ -78,6 +149,9 @@ main {
 }
 
 @media (max-width: 850px) {
+    .titulo {
+        font-size: 3rem;
+    }
     .navbar ul {
         flex-wrap: wrap;
     }
@@ -107,7 +181,7 @@ footer {
 
 .iconos {
     display: flex;
-    justify-content:space-evenly ;
+    justify-content: space-evenly;
 }
 
 .iconos a {
@@ -123,4 +197,69 @@ footer {
     background-color: #F3C800;
     color: black;
     transition: 0.5s;
+}
+
+#botonInicio {
+    color: #272727;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    background-color: #F3C800;
+    border-radius: 5%;
+    margin: 10px;
+}
+
+.resaltado {
+    color: white;
+}
+
+#puntuacionActual {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    color: #F3C800;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+#maximaPuntuacion {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    color: #F3C800;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+#preguntasRestantes {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    color: #F3C800;
+}
+
+#pregunta {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: white;
+    text-decoration: underline;
+}
+
+.correct {
+    background-color: #27ae60;
+    animation: animation 1s ease-in-out;
+}
+
+.wrong {
+    background-color: #e74c3c;
+    animation: animation 1s ease-in-out;
+}
+
+@keyframes animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
