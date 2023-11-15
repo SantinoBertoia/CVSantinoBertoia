@@ -73,7 +73,7 @@ const todasLasPreguntas = [
     },
     {
         pregunta: '¿Cuál es el nivel de mi conocimiento en Figma?',
-        opciones: ['Intermedio', 'Avanzado', 'Intermedio'],
+        opciones: ['Intermedio', 'Avanzado', 'Básico'],
         opcionCorrecta: 0,
     },
     {
