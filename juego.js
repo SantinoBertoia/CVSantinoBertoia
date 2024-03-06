@@ -98,7 +98,7 @@ const todasLasPreguntas = [
     },
     {
         pregunta: '¿Cuántos cursos realicé en freeCodeCamp?',
-        opciones: ['1', '3', '2'],
+        opciones: ['1', '2', '3'],
         opcionCorrecta: 2,
     },
     {
@@ -108,7 +108,7 @@ const todasLasPreguntas = [
     },
     {
         pregunta: '¿Cuántas páginas aparecen en mi portafolio?',
-        opciones: ['12', '8', '10'],
+        opciones: ['8', '11', '10'],
         opcionCorrecta: 1,
     },
     {

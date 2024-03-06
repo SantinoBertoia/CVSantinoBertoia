@@ -48,12 +48,14 @@ main {
 
 .web {
     flex-basis: calc(25% - 2em);
-    margin: 1em;
+    margin: 30px 0 30px 0;
 }
 
 .web img {
     width: 19rem;
     height: auto;
+    border: 3px solid white;
+    border-radius: 30px;
 }
 
 footer {
